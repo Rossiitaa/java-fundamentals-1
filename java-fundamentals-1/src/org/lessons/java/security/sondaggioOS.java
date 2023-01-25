@@ -31,5 +31,7 @@ public class sondaggioOS {
 		System.out.println("La percentuale di studenti che utilizza macOS è: " + percentualeStudentiMacOS + "%");
 		System.out.println("La percentuale di studenti che utilizza Linux è: " + percentualeStudentiLinux + "%");
 
+		s.close();
+
 	}
 }
