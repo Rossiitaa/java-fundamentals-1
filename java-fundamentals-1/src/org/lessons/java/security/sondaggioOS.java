@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class sondaggioOS {
 	public static void main(String[] args) {
 		int studentsNumber;
-		short windowsStudents;
-		short macOSstudents;
-		short linuxStudents;
+		int windowsStudents;
+		int macOSstudents;
+		int linuxStudents;
 
 		Scanner s = new Scanner(System.in);
 
@@ -15,17 +15,17 @@ public class sondaggioOS {
 		studentsNumber = s.nextInt();
 
 		System.out.println("Quanti studenti usano windows?");
-		windowsStudents = s.nextShort();
+		windowsStudents = s.nextInt();
 
 		System.out.println("Quanti studenti usano macOS?");
-		macOSstudents = s.nextShort();
+		macOSstudents = s.nextInt();
 
 		System.out.println("Quanti studenti usano Linux?");
-		linuxStudents = s.nextShort();
+		linuxStudents = s.nextInt();
 
-		int percentualeStudentiWindows = (windowsStudents * 100) / studentsNumber;
-		int percentualeStudentiMacOS = (macOSstudents * 100) / studentsNumber;
-		int percentualeStudentiLinux = (linuxStudents * 100) / studentsNumber;
+		double percentualeStudentiWindows = (windowsStudents * 100) / studentsNumber;
+		double percentualeStudentiMacOS = (macOSstudents * 100) / studentsNumber;
+		double percentualeStudentiLinux = (linuxStudents * 100) / studentsNumber;
 
 		System.out.println("La percentuale di studenti che utilizza windows è: " + percentualeStudentiWindows + "%");
 		System.out.println("La percentuale di studenti che utilizza macOS è: " + percentualeStudentiMacOS + "%");
