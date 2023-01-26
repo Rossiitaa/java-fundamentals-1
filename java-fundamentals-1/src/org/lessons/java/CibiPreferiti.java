@@ -12,6 +12,6 @@ public class CibiPreferiti {
 
 		System.out.println("In last place: " + favoriteFoods[4]);
 
-		System.out.println("The mid-ranking food: " + favoriteFoods[3]);
+		System.out.println("The mid-ranking food: " + favoriteFoods[favoriteFoods.length / 2]);
 	}
 }
